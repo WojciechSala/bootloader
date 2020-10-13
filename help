@@ -1,0 +1,14 @@
+Compile by:
+  nasm -f bin xxx.asm -o xxx.bin
+
+  -f bin (genreate binary program) 
+
+
+dd if=boot.bin of=boot.img conv=notrunc
+
+
+Running on QUEMU
+
+qemu-system-i386 -fda boot.bin
+qemu-system-i386 -drive format=raw,file=boot3.bin
+
